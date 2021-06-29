@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CRUD APP</title>
+  </head>
+  <body>
+    <h1>THIS IS THE HOME PAGE</h1>
+    <form action="/author" method="POST">
+      <input type="text" placeholder="name" name="name" />
+      <button type="submit">Submit</button>
+    </form>
+    <% if (posts.length) { %>
+    <h2>Posts</h2>
+    <% } %>
+    <ul class="posts">
+      <% for(const post of posts) { %>
+      <li><%= post.name %></li>
+      <% } %>
+    </ul>
+  </body>
+</html>
